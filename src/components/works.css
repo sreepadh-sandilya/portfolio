@@ -1,0 +1,190 @@
+/* General Styles */
+.workmain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f7f7f7;
+}
+
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.work .card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Title */
+.div1 h2 {
+  font-size: 20px !important;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+/* Role */
+.div2 p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Description */
+.div3 p {
+  font-size: 20px;
+  color: #666;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* Image Container */
+.div4 {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.div4 img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.div4 img:hover {
+  transform: scale(1.1);
+}
+
+/* Button */
+.div5 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.div5 button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 5px;
+}
+
+.div5 button:hover {
+  background-color: #0056b3;
+}
+
+/* Dark Mode */
+.workmain.darkmode {
+  background-color: #121212;
+}
+
+.workmain.darkmode .card {
+  background-color: #1f1f1f;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.workmain.darkmode .div1 h2,
+.workmain.darkmode .div2 p,
+.workmain.darkmode .div3 p {
+  color: #e0e0e0;
+}
+
+.workmain.darkmode .div5 button {
+  background-color: #1a73e8;
+}
+
+.workmain.darkmode .div5 button:hover {
+  background-color: #0c56b3;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .work .card {
+    width: 45%; /* Adjust width for medium screens like tablets */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .work .card {
+    width: 100%; /* Stack cards vertically for smaller screens */
+  }
+
+  .div1 h2 {
+    font-size: 18px; /* Smaller title font for tablets */
+  }
+
+  .div2 p,
+  .div3 p {
+    font-size: 16px; /* Smaller text for tablets */
+  }
+
+  .div4 img {
+    width: 40px; /* Smaller images for tablets */
+    height: 40px;
+  }
+
+  .div5 button {
+    font-size: 12px; /* Smaller button text */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .workmain {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .work .card {
+    width: 100%; /* Full-width cards on mobile */
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  .div1 h2 {
+    font-size: 16px; /* Even smaller title for mobile */
+  }
+
+  .div2 p,
+  .div3 p {
+    font-size: 14px; /* Further reduce font size for mobile */
+  }
+
+  .div4 img {
+    width: 35px; /* Smaller images for mobile */
+    height: 35px;
+  }
+
+  .div5 button {
+    font-size: 10px; /* Smaller button text for mobile */
+    padding: 8px 12px; /* Smaller button padding */
+  }
+}

@@ -1,0 +1,177 @@
+/* Default Styles for Larger Screens */
+body {
+    background-color: #fff; /* Default background color */
+}
+
+.me1 {
+    margin-top: 300px;
+    margin-left: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.me1_1 {
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.mebox {
+    max-width: 55%;
+    border-radius: 100px;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.4), 
+                -15px -15px 30px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: black;
+}
+
+.dark-mode b {
+    color: yellow;
+}
+
+.dark-mode .mebox .me1_1 button {
+    background-color: yellow;
+    color: black;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+.dark-mode h1 {
+    color: aliceblue;
+}
+
+p {
+    font-size: 35px;
+}
+
+b {
+    color: orangered;
+}
+
+.mebox .me1_1 button {
+    font-size: 25px;
+    color: #fff;
+    background-color: orangered;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color, box-shadow 0.3s ease;
+}
+
+img {
+    width: 400px;
+    border-radius: 100px;
+    box-shadow: 5px 5px 20px orangered, 
+                -5px -5px 20px orangered;
+    transition: box-shadow 0.3s ease;
+}
+
+.dark-mode .meprofile img {
+    box-shadow: 15px 15px 30px rgba(255, 255, 0, 0.4), 
+                -15px -15px 30px rgba(255, 255, 0, 0.2);
+}
+
+/* Optional hover effect */
+img:hover {
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.4), 
+                -15px -15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.mebox .me1_1 button:hover {
+    background-color: blue;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.4), 
+                -15px -15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .me1 {
+        flex-direction: column;
+        margin-top: 100px;
+        margin-left: 0;
+    }
+
+    .me1_1 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .mebox {
+        max-width: 90%;
+        margin: 20px 0;
+    }
+
+    h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    img {
+        width: 250px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .mebox .me1_1 button {
+        font-size: 20px;
+        padding: 10px 15px;
+    }
+
+    /* Mobile View Specific Adjustments */
+    .dark-mode h1 {
+        font-size: 40px;
+    }
+
+    .dark-mode .mebox .me1_1 button {
+        background-color: yellow;
+        color: black;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .me1 {
+        margin-top: 50px;
+    }
+
+    .me1_1 {
+        margin-bottom: 15px;
+    }
+
+    .mebox {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    img {
+        width: 200px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .mebox .me1_1 button {
+        font-size: 18px;
+        padding: 8px 12px;
+    }
+}

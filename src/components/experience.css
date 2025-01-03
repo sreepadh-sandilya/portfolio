@@ -1,0 +1,126 @@
+/* Default light mode styles */
+.mainExperience {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.Experience {
+    width: 70%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.Experience1 h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.Experience2 p, .Experience3 p, .Experience4 p {
+    font-size: 1.3rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+.Experience2 b, .Experience3 b, .Experience4 b {
+    color: #ff6347;
+    font-size: 1.4rem;
+}
+
+.Experience2, .Experience3, .Experience4 {
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+}
+
+.Experience2:hover, .Experience3:hover, .Experience4:hover {
+    background-color: #ffefe5;
+    border-color: #ff6347;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Dark mode styles */
+.dark-mode .mainExperience {
+    background-color: #121212;
+}
+
+.dark-mode .Experience {
+    background-color: #333;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode .Experience1 h1 {
+    color: aliceblue;
+}
+
+.dark-mode .Experience2 p, .dark-mode .Experience3 p, .dark-mode .Experience4 p {
+    color: #ccc;
+}
+
+.dark-mode .Experience2 b, .dark-mode .Experience3 b, .dark-mode .Experience4 b {
+    color: #ff6347;
+}
+
+.dark-mode .mainExperience .Experience b {
+    color: yellow !important;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .Experience {
+        width: 80%;
+        padding: 20px 30px;
+    }
+
+    .Experience1 h1 {
+        font-size: 2.5rem;
+    }
+
+    .Experience2 p, .Experience3 p, .Experience4 p {
+        font-size: 1.2rem;
+    }
+
+    .Experience2 b, .Experience3 b, .Experience4 b {
+        font-size: 1.3rem;
+    }
+
+    .Experience2, .Experience3, .Experience4 {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Experience {
+        width: 90%;
+        padding: 15px 20px;
+    }
+
+    .Experience1 h1 {
+        font-size: 2rem;
+    }
+
+    .Experience2 p, .Experience3 p, .Experience4 p {
+        font-size: 1.1rem;
+    }
+
+    .Experience2 b, .Experience3 b, .Experience4 b {
+        font-size: 1.2rem;
+    }
+
+    .Experience2, .Experience3, .Experience4 {
+        padding: 12px;
+    }
+}

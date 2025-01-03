@@ -1,0 +1,8 @@
+
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: white; /* Set the background to white */
+    color: black; /* Ensure text is readable */
+    /* font-family: Arial, sans-serif; Optional: Set a default font */
+}

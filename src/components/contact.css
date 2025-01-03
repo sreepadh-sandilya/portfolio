@@ -1,0 +1,126 @@
+/* General Styles */
+.contact-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  background: #fdf6e3; /* Light creamy background */
+  color: #333; /* Dark text for contrast */
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.contact-intro {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #555; /* Slightly muted for readability */
+}
+
+.contact-info {
+  background: #fff; /* White card-like container */
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.contact-info a {
+  color: #007acc; /* Soft blue link color */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.contact-info a:hover {
+  color: #005f99; /* Darker blue on hover */
+  text-decoration: underline;
+}
+
+.contact-info b {
+  color: #555;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .contact-main {
+    padding: 30px; /* Slightly reduce padding for tablet screens */
+  }
+
+  h1 {
+    font-size: 2rem; /* Adjust heading size for smaller screens */
+  }
+
+  .contact-intro {
+    font-size: 1.1rem; /* Adjust font size of intro for tablets */
+  }
+
+  .contact-info {
+    width: 90%; /* Increase width for better space usage on tablets */
+  }
+
+  .contact-info p {
+    font-size: 1.1rem; /* Adjust paragraph font size for tablets */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-main {
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+
+  h1 {
+    font-size: 1.8rem; /* Adjust heading size further for mobile */
+  }
+
+  .contact-intro {
+    font-size: 1rem; /* Further reduce font size for mobile */
+  }
+
+  .contact-info {
+    width: 95%; /* Take up more space on mobile */
+  }
+
+  .contact-info p {
+    font-size: 1rem; /* Adjust font size of paragraphs for mobile */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-main {
+    padding: 15px; /* Minimal padding on very small screens */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Smaller heading on very small screens */
+  }
+
+  .contact-intro {
+    font-size: 0.9rem; /* Smaller intro font size */
+  }
+
+  .contact-info {
+    width: 100%; /* Full width on very small screens */
+    padding: 15px; /* Adjust padding for small screens */
+  }
+
+  .contact-info p {
+    font-size: 0.9rem; /* Smaller paragraph font size */
+  }
+}

@@ -1,0 +1,123 @@
+/* Default styles */
+.mainabout {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.about {
+    width: 60%;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.about1 h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.about2 p, .about3 p {
+    font-size: 1.8rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.about2 p b, .about3 p b {
+    color: #ff6347;
+}
+
+.about3 p {
+    margin-top: -15px;
+}
+
+.about2, .about3 {
+    width: 100%;
+}
+
+/* Dark mode styles */
+.dark-mode .mainabout {
+    background-color: black;
+}
+
+.dark-mode .about {
+    background-color: #333;
+    box-shadow: 0 4px 15px rgba(255, 255, 0, 0.2);
+}
+
+.dark-mode .about1 h1 {
+    color: aliceblue;
+}
+
+.dark-mode .about2 p, .dark-mode .about3 p {
+    color: #ccc;
+}
+
+.dark-mode .about2 p b, .dark-mode .about3 p b {
+    color: yellow;
+}
+
+.dark-mode .about2 p:hover, .dark-mode .about3 p:hover {
+    color: #fff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .about {
+        width: 80%;
+        padding: 20px 30px;
+    }
+
+    .about1 h1 {
+        font-size: 2.5rem;
+    }
+
+    .about2 p, .about3 p {
+        font-size: 1.6rem;
+    }
+
+    .about2 p b, .about3 p b {
+        font-size: 1.7rem;
+    }
+
+    /* Adjust the gap for smaller screens */
+    .about {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about {
+        width: 90%;
+        padding: 15px 20px;
+    }
+
+    .about1 h1 {
+        font-size: 2rem;
+    }
+
+    .about2 p, .about3 p {
+        font-size: 1.4rem;
+    }
+
+    .about2 p b, .about3 p b {
+        font-size: 1.5rem;
+    }
+
+    /* Further reduce the gap for mobile devices */
+    .about {
+        gap: 15px;
+    }
+}
