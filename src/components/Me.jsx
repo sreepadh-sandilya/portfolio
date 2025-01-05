@@ -4,6 +4,7 @@ import './me.css'
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
+import sreepadhPic from '../assets/sreepadh_pic.jpg';
 
 const Me = ({ darkmode, togglemode }) => {
   const openResume=()=>{
@@ -32,7 +33,7 @@ const Me = ({ darkmode, togglemode }) => {
       </div>
       </div>
       <div className={`meprofile ${darkmode ? 'light-mode' : 'dark-mode'}`}>
-        <img src='src\assets\sreepadh_pic.jpg' alt='sree'/>
+        <img src={sreepadhPic} alt='sree'/>
       </div>
 
     </div>
